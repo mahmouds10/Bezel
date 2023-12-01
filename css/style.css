@@ -19,10 +19,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-@font-face {
-  font-family: pp;
-  src: url(../Poppins/Poppins-Medium.ttf);
-}
 /* =========================== */
 
 
@@ -48,7 +44,7 @@ nav i{
 }
 nav ul li a{
   color: #fff !important;
-  font-family: pp;
+  font-family: 'Poppins', sans-serif;;
   font-size: 15px !important;
 }
 nav .nav-logo{
@@ -125,6 +121,7 @@ nav .social-icon li:hover i{
 /* End Carousle Style */
 
 
+/* Header Section Style */
 .header-content {
   position: absolute;
   top: 50%;
@@ -133,7 +130,7 @@ nav .social-icon li:hover i{
 }
 .header-content h1{
   font-size: 100px;
-  font-family: pp;
+  font-family: 'Poppins', sans-serif;;
   font-weight: 700;
   color: #fff;
   margin-top: 20px;
@@ -142,7 +139,7 @@ nav .social-icon li:hover i{
 }
 .header-content p{
   font-size: 18;
-  font-family: pp;
+  font-family: 'Poppins', sans-serif;;
   font-weight: 400;
   color: #fff;
   margin: 10px 0 ;
@@ -155,7 +152,7 @@ nav .social-icon li:hover i{
   border-radius: 4px;
   color: white !important;
   font-size: 14px !important;
-  font-family: pp;
+  font-family: 'Poppins', sans-serif;;
   font-weight: 600;
   margin-top: 25px;
   transition: all .7s;
@@ -176,11 +173,49 @@ nav .social-icon li:hover i{
   color: #000 !important;
   background-color: #fff;
 }
+/* End Header Section Style */
 
+
+/* About Section Style */
+.about{
+  padding: 110px 0;
+  font-family: 'Poppins', sans-serif;;
+  font-size: 24px;
+  font-weight: 200;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+.about p{
+  color: rgb(120, 120, 120);
+}
+.about h6{
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(31, 31, 31);
+} 
 .about span::after{
   content: "|";
   color: #00bfd8;
-  animation: typing 6s infinite;
+  animation: typing 4s infinite;
+}
+.about a{
+  border-radius: 0;
+  background-color: transparent;
+  line-height: 48px;
+  border-width: 1px;
+  padding: 0 30px;
+  border: #000 1px solid;
+  font-size: 11px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #1f1f1f;
+  border-color: #dedede;
+  transition: all 0.3s;
+}
+.about a:hover{
+  color: #fff !important;
+  background-color: #000;
+  cursor: pointer;
 }
 @keyframes typing {
   0%{
@@ -206,11 +241,11 @@ nav .social-icon li:hover i{
     content: "apps|";
     }
     12%{
-    content: "apps|";
+    content: "app";
     }
     
     14%{
-    content: "app|";
+    content: "ap|";
     }
     
     16%{
