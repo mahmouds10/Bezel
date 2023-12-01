@@ -1,0 +1,381 @@
+/* Fixed Style */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+a,
+span {
+  display: inline-block;
+}
+img {
+  display: block;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+@font-face {
+  font-family: pp;
+  src: url(../Poppins/Poppins-Medium.ttf);
+}
+/* =========================== */
+
+
+/* Nav Bar Style */
+nav{
+  border-top: 0 I !important;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  z-index: 7777;
+  background-color: transparent !important;
+  top: 0;
+}
+.nav-links{
+  border-right: 3px solid rgb(0, 0, 0);
+  padding-right: 30px !important;
+  margin-right: 30px !important;
+
+}
+nav i{
+  padding: 0 5px;
+  color: #fff;
+  font-size: 15px;
+  transition: all 0.6s;
+}
+nav ul li a{
+  color: #fff !important;
+  font-family: pp;
+  font-size: 15px !important;
+}
+nav .nav-logo{
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+}
+nav .nav-logo::after{
+  content: ".";
+  color: #00bfd8;
+}
+nav .social-icon li:hover i{
+  color: #ccc !important;
+}
+.navbar {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.scrolled {
+  background-color: white !important; /
+}
+.scrolled .nav-logo, .scrolled .navbar-nav .nav-link {
+  color: black !important; 
+}
+.scrolled .social-icon i {
+  color: black !important; 
+}
+/* End Nav Bar Style */
+
+
+/* Carousle Style */
+.carousel-item {
+  height: 100vh;  
+  background-size: cover;
+  background-position: center;
+}
+.carousel-controls {
+  background-color: transparent !important;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+}
+.carousel-controls button {
+  background-color: transparent !important;
+  border: 1px white solid !important;
+  padding: 13px;
+  border-left: 0 !important;
+  position: relative;
+}
+.carousel-controls button::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: all 0.5s;
+  z-index: -8;
+}
+.carousel-controls button i {
+  color: #fff;
+  transition: all 0.5s;
+  z-index: 3;
+}
+.carousel-controls button:hover i {
+  color: black;
+}
+.carousel-controls button:hover::after {
+  left: 0%;
+}
+/* End Carousle Style */
+
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+}
+.header-content h1{
+  font-size: 100px;
+  font-family: pp;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  
+}
+.header-content p{
+  font-size: 18;
+  font-family: pp;
+  font-weight: 400;
+  color: #fff;
+  margin: 10px 0 ;
+}
+.header-content .btn a{
+  margin: 0 10px;
+}
+.header-content .btn a{
+  padding: 11px 30px;
+  border-radius: 4px;
+  color: white !important;
+  font-size: 14px !important;
+  font-family: pp;
+  font-weight: 600;
+  margin-top: 25px;
+  transition: all .7s;
+}
+.header-content .btn .solid{
+  background-color: #00c3da;
+}
+.header-content .btn .solid:hover{
+  transform: translate(0px , -1px);
+  color: #00d5ee;
+}
+.header-content .btn .reg{
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+.header-content .btn .reg:hover{
+  transform: translate(0px , -1px);
+  color: #000 !important;
+  background-color: #fff;
+}
+
+.about span::after{
+  content: "|";
+  color: #00bfd8;
+  animation: typing 6s infinite;
+}
+@keyframes typing {
+  0%{
+    content: "|";
+    }
+    
+    2%{
+    content: "a|";
+    }
+    
+    4%{
+    content: "ap|";
+    }
+    
+    6%{
+    content: "app|";
+    }
+    
+    8%{
+    content: "apps|";
+    }
+    10%{
+    content: "apps|";
+    }
+    12%{
+    content: "apps|";
+    }
+    
+    14%{
+    content: "app|";
+    }
+    
+    16%{
+    content: "ap|";
+    }
+    
+    18%{
+    content: "a|";
+    }
+    
+    20%{
+    content: "|";
+    }
+    
+    22%{
+    content: "|";
+    }
+    24%{
+    content: "|";
+    }
+    
+    26%{
+    content: "s|";
+    }
+    
+    28%{
+    content: "so|";
+    }
+    
+    30%{
+    content: "sof|";
+    }
+    
+    32%{
+    content: "soft|";
+    }
+    
+    34%{
+    content: "softw|";
+    }
+    
+    36%{
+    content: "softwa|";
+    }
+    
+    38%{
+    content: "softwar|";
+    }
+    
+    40%{
+    content: "software|";
+    }
+    
+    42%{
+    content: "softwares|";
+    }
+    44%{
+    content: "softwares|";
+    }
+    46%{
+    content: "softwares|";
+    }
+    48%{
+    content: "software|";
+    }
+    
+    50%{
+    content: "softwar|";
+    }
+    
+    52%{
+    content: "sfotwa|";
+    }
+    
+    54%{
+    content: "softw|";
+    }
+    
+    56%{
+    content: "soft|";
+    }
+    
+    58%{
+    content: "sof|";
+    }
+    
+    60%{
+    content: "so|";
+    }
+    
+    62%{
+    content: "s|";
+    }
+    
+    64%{
+    content: "|";
+    }
+    
+    66%{
+    content: "|";
+    }
+    68%{
+    content: "|";
+    }
+    
+    70%{
+    content: "w|";
+    }
+    
+    72%{
+    content: "we|";
+    }
+    
+    74%{
+    content: "web|";
+    }
+    
+    76%{
+    content: "webs|";
+    }
+    
+    78%{
+    content: "websi|";
+    }
+    
+    80%{
+    content: "websit|";
+    }
+    
+    82%{
+    content: "website|";
+    }
+    
+    84%{
+    content: "websites|";
+    }
+    
+    86%{
+    content: "website|";
+    }
+    
+    88%{
+    content: "websit|";
+    }
+    
+    90%{
+    content: "websi|";
+    }
+    
+    92%{
+    content: "webs|";
+    }
+    
+    94%{
+    content: "web|";
+    }
+    96%{
+      content: "we|";
+    }
+    98%{
+    content: "w|";
+    }
+    
+    100%{
+    content: "|";
+    }
+    
+}

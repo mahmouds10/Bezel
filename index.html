@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jq.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          var scroll = $(window).scrollTop();
+          if (scroll > 100) {
+            // Adjust the value to your desired scroll threshold
+            $(".navbar").addClass("scrolled");
+          } else {
+            $(".navbar, .social-icon").removeClass("scrolled");
+          }
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <!-- Nav Bar -->
+    <nav class="navbar position-fixed start-0 end-0 py-1 navbar-expand-lg p-0">
+      <div class="container">
+        <a class="p-0 nav-logo" href="#">bezel</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav gap-4 nav-links me-2 ms-auto mb-0 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <ul class="social-icon d-flex list-unstyled gap-3 p-0 m-0">
+            <li class="d-flex align-items-center">
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li class="d-flex align-items-center">
+              <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            </li>
+            <li class="d-flex align-items-center">
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Nav Bar -->
+
+    <!-- Header Section -->
+    <header class="position-relative">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide position-relative"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div
+            class="position-relative carousel-item active"
+            style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.3),
+                  rgba(0, 0, 0, 0.3)
+                ),
+                url('imgs/bg-image-28.jpg');
+            "
+          >
+            <div
+              class="header-content position-absolute top-50 translate-middle text-center"
+            >
+              <h1>Get Awesome.</h1>
+              <p>We are an innovative compnay making digital stuff.</p>
+              <div class="btn">
+                <a class="solid" href="">Read More</a>
+                <a class="reg" href="">Contact US</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="carousel-item"
+            style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.3),
+                  rgba(0, 0, 0, 0.3)
+                ),
+                url('imgs/bg-image-29.jpg');
+            "
+          >
+            <div
+              class="header-content position-absolute top-50 translate-middle text-center"
+            >
+              <h1>Create With Bezel.</h1>
+              <p>We help ambitious companies create newyalue.</p>
+              <div class="btn">
+                <a class="solid" href="">Hire Us</a>
+                <a class="reg" href="">Services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span aria-hidden="true"
+              ><i class="fa-solid fa-arrow-left"></i
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span aria-hidden="true"
+              ><i class="fa-solid fa-arrow-right"></i
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- End Header Section -->
+
+    <!-- About Section -->
+    <section class="about">
+      
+    </section>
+    <!-- End About Section -->
+  </body>
+</html>
