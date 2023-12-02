@@ -603,3 +603,62 @@ nav .social-icon li:hover i{
   transform: scaley(1.1);
 }
 /* End Price Section Stlye */
+
+
+/* Contact Section Style */
+.contact iframe{
+  height: 100%;
+  width: 100%;
+}
+.Get{
+  padding: 60px 100px;
+}
+.contact .G{
+  position: relative;
+  left: -10px; 
+}
+.form-input{
+  padding: 20px 0;
+}
+.form-input input{
+  height: 50px;
+  padding: 0 15px;
+  font-size: 15px;
+  line-height: 50px;
+  border: 2px solid #eee;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+.contact label{
+  color: #1f1f1f;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    
+}
+.contact .header-tittle{
+  margin-bottom: 0;
+}
+.contact form textarea{
+  resize: none;
+  height: 110px;
+  padding-block: 15px;
+}
+.contact form button{
+  color: #fff;
+  padding: 0 16px;
+  font-size: 12px;
+  height: 44px;
+  line-height: 40px;
+  background-color: #00c3da;
+  transition: all 0.5s;
+  border-radius: 5px;
+  border: none;
+}
+.contact form button:hover{
+  background-color: #00d5ee;
+  transform: translatey(-1px);
+}
+/* End Contact Section Style */
