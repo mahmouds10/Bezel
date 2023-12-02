@@ -19,6 +19,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+::selection{
+  background-color: #1f1f1f;
+  color: #fff;
+}
 /* =========================== */
 
 
@@ -183,7 +187,7 @@ nav .social-icon li:hover i{
   font-size: 24px;
   font-weight: 200;
   text-align: center;
-  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
 }
 .about p{
   color: rgb(120, 120, 120);
@@ -205,7 +209,7 @@ nav .social-icon li:hover i{
   border-width: 1px;
   padding: 0 30px;
   border: #000 1px solid;
-  font-size: 11px;
+  font-size: 12px;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   color: #1f1f1f;
@@ -216,6 +220,7 @@ nav .social-icon li:hover i{
   color: #fff !important;
   background-color: #000;
   cursor: pointer;
+  transform: translate(0px , -1px);
 }
 @keyframes typing {
   0%{
@@ -414,3 +419,66 @@ nav .social-icon li:hover i{
     }
     
 }
+/* End About Section Style */
+
+
+/* Team Section Style */
+.team{
+  padding: 110px 0;
+}
+.header-tittle{
+  margin-bottom: 25px;
+}
+.header-tittle > h4{
+  font-weight: 400;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #787878;
+    margin-block: 10px;
+}
+.header-tittle .double-word h2{
+  font-size: 60px;
+  color: #f2f2f2;
+  font-family: 'Poppins', sans-serif;
+  user-select: none;
+}
+.header-tittle .double-word h3{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: #1f1f1f;
+}
+.team-social a{
+  font-size: 13px;
+  color: #fff;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 18px;
+}
+.team-txt h3{
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+.team-txt p{
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+.team-layer {
+  transform: translatey(20px);
+  background-color: rgba(0, 195, 218,9);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.team-member:hover .team-layer{
+  transform: translatey(0);
+  opacity: 0.8;
+}
+/* End Team Section Style */
+
+
