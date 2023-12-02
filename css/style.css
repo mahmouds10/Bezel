@@ -437,15 +437,16 @@ nav .social-icon li:hover i{
     margin-block: 10px;
 }
 .header-tittle .double-word h2{
-  font-size: 60px;
   color: #f2f2f2;
   font-family: 'Poppins', sans-serif;
   user-select: none;
+  font-weight: 700;
+  font-size: 76px;
 }
 .header-tittle .double-word h3{
   font-family: 'Poppins', sans-serif;
+  font-size: 38px;
   font-weight: 700;
-  font-size: 32px;
   color: #1f1f1f;
 }
 .team-social a{
@@ -521,3 +522,84 @@ nav .social-icon li:hover i{
 }
 /* End Services style */
 
+
+/* Pricing Section Style */
+.price{
+  padding: 110px 0;
+  background-color: #f7f7f7;
+}
+.price-card{
+  
+  font-family: 'Poppins', sans-serif;
+}
+.price-card  .inner-price{
+  background-color: #fff; 
+  padding: 45px 30px;
+
+}
+.price-card h4{
+  font-size: 13px;
+  font-weight: 400px;
+}
+.price-card .ammount{
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+.price-card .ammount h2{
+  position: relative;
+  font-size: 55px;
+  transform: translatex(15px);
+}
+.price-card .ammount h2::after{
+  content: "$";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  font-size: 18px;
+}
+.price-card ul{
+  margin-top: 15px;
+}
+.price-card ul li{
+ padding: 8px;
+ color: rgb(120, 120, 120);
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 24px;
+}
+.price-card a{
+  color: #fff;
+  padding: 0 16px;
+  font-size: 12px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #00c3da;
+  transition: all 0.5s;
+  border-radius: 5px;
+}
+.price-card a:hover{
+  background-color: #00d5ee;
+  transform: translatey(-1px);
+}
+.best-icon{
+  position: absolute;
+  top: 40px;
+  right: 35px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background-color: #00c3da;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+.best-value , .best-value::after
+{
+  color: #00bfd8;
+}
+.best-card{
+  transform: scaley(1.1);
+}
+/* End Price Section Stlye */
