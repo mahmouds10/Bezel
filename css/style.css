@@ -482,3 +482,42 @@ nav .social-icon li:hover i{
 /* End Team Section Style */
 
 
+/* Services Section Style */
+.services{
+  padding: 110px 0;
+  background-color: #626262;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+.services .serve h4{
+  font-size: 13px;
+  font-weight: 600;
+}
+.services .whatWeDo{
+  text-align: left !important;
+}
+.services .whatWeDo h2{
+  opacity: 0.06;
+  position:relative;
+  left: -10px;
+  font-weight: 700;
+  font-size: 76px;
+}
+.services .whatWeDo h3{
+  color:#fff ;
+  font-size: 38px;
+  font-weight: 700;
+}
+.services .whatWeDo p{
+  text-align: left;
+}
+.services .whatWeDo .double-word{
+  margin-bottom: 25px;
+}
+.services .task >*{
+  font-size: 16px;
+  font-weight: 400;
+  margin:  10px 5px;
+}
+/* End Services style */
+
